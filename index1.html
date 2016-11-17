@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>项目3 创维官网首页 邱兵兵</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>创维</title>
 		<link rel="stylesheet" href="css/common/font-awesome.css"/>
 		<link rel="stylesheet" href="css/index.css"/>
 	</head>
@@ -14,15 +15,11 @@
 						<img src="imgs/logo.gif" height="100%"/>
 					</a>
 				</div>
-				<div class="languageAndSearch">
-					<ul>
-						<li>
-							<a  class="chinese" href="#">中文</a>
-						</li>
-						<li>
-							<a href="#">English</a>
-						</li>
-					</ul>
+				<div class="langAndSearch">
+					<div class="lang">
+						<a href="#">中文&nbsp;&nbsp;&nbsp;|</a>
+						<a href="#">English</a>
+					</div>
 					<div class="search">
 						<form action="" method="post">
 							<input type="text" placeholder="请输入关键字" />
@@ -41,27 +38,25 @@
 				<li class="showIntro">
 					<a href="#">集团介绍</a>
 					<div class="introduce">
-						<div class="introduceInner">
-							<div class="introList">
-								<ul>
-									<li>
-										<a href="#">集团介绍</a>
-									</li>
-									<li>
-										<a href="#">集团成员</a>
-									</li>
-									<li>
-										<a href="#">企业大事</a>
-									</li>
-									<li>
-										<a href="#">企业荣誉</a>
-									</li>
-								</ul>
-							</div>
-							<div class="introImg">
-								<img src="../imgs/house.jpg"/>
-								<p>致力于成为“全球消费电子产业领导者”！</p>
-							</div>
+						<div class="introList">
+							<ul>
+								<li>
+									<a href="#">集团介绍</a>
+								</li>
+								<li>
+									<a href="#">集团成员</a>
+								</li>
+								<li>
+									<a href="#">企业大事</a>
+								</li>
+								<li>
+									<a href="#">企业荣誉</a>
+								</li>
+							</ul>
+						</div>
+						<div class="introImg">
+							<img src="imgs/house.jpg"/>
+							<p>致力于成为“全球消费电子产业领导者”！</p>
 						</div>
 					</div>
 				</li>
@@ -70,7 +65,7 @@
 					<div class="products">
 						<ul>
 							<li>
-								<div class="TV">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -84,7 +79,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="ice">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -101,7 +96,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="air">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -115,7 +110,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="digital">
+								<div>
 									<ul>
 										<li>								
 											<h3>
@@ -141,7 +136,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="qun">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -170,7 +165,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="light">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -187,7 +182,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="smj">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -210,7 +205,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="illumination">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -225,7 +220,7 @@
 										</li>
 										<li>
 											<a href="#">市政照明系列</a>
-										</li
+										</li>
 										<li>
 											<a href="#">恒流驱动系列</a>
 										</li>
@@ -233,7 +228,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="wireless">
+								<div>
 									<ul>
 										<li>
 											<h3>
@@ -275,29 +270,35 @@
 				</li>
 			</ul>
 		</div>
-		<div class="slideBox">
-			<div class="slideArrow">
+		<div class="slideBox" id="slideBox">
+			<div class="slideArrow" id="slideArrow">
 				<i id="prev">&lt</i>
 				<i id="next">&gt</i>
 			</div>
-			<div id="slideImgs">
+			<div id="slideImgBox">
 				<div id="slider">
-					<a href="#" class="bgImgs">
+					<a href="#">
+						<img src="imgs/bgImg4.jpg" width="100%"/>
+					</a>
+					<a href="#">
 						<img src="imgs/bgImg1.jpg" width="100%"/>
 					</a>
-					<a href="#" class="bgImgs">
+					<a href="#">
 						<img src="imgs/bgImg2.jpg" width="100%"/>
 					</a>
-					<a href="#" class="bgImgs">
+					<a href="#">
 						<img src="imgs/bgImg3.jpg" width="100%"/>
 					</a>
-					<a href="#" class="bgImgs">
+					<a href="#">
 						<img src="imgs/bgImg4.jpg" width="100%"/>
+					</a>
+					<a href="#" class="bgImgs" id="img0">
+						<img src="imgs/bgImg1.jpg" width="100%"/>
 					</a>
 				</div>
 			</div>
 			<div id="slideDots">
-				<i index="1" class="on"></i>
+				<i index="1" class="focus"></i>
 				<i index="2"></i>
 				<i index="3"></i>
 				<i index="4"></i>
@@ -314,23 +315,23 @@
 					<ul>
 						<li>
 							<a href="#">2016CJ展黑科技 创维微游戏机多人电竞强势来袭</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">家电企业O2O直营店扩军，创维要培植自己的汗血宝马</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">进军家庭游戏市场 创维数字携手腾讯推出微游戏机</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">破冰之势，不惧逆市，创维空调单月销售突破1亿大关！</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">创维群欣监控系统进驻巴基斯坦，助警方破获多起犯罪案件</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 					</ul>
 				</div>
@@ -345,23 +346,23 @@
 					<ul>
 						<li>
 							<a href="#">创维数字推出miniStation微游戏机 开启全民...</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">智享健康洗护生活 创维洗衣机高端新品问世</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">客厅战略合作升级 创维盒子联手企鹅TV推出Q+二代</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">创维与腾讯、中国互联网电视发起战略合作协议，打造业界...</a>
-							<P>2016-08-18</P>
+							<span>2016-08-18</span>
 						</li>
 						<li>
 							<a href="#">创维GLED Air G7200：向时代中坚致敬</a>
-							<P>2016-08-18</P>
+							<span>2016-08-1</span>>
 						</li>
 					</ul>
 				</div>
@@ -444,10 +445,11 @@
 						<option value="#">南京创维电器科技有限公司</option>
 						<option value="#">深圳市创维群欣安防科技股份有限公</option>
 						<option value="#">深圳创维数字技术有限公司</option>
-					<select>
+					</select>
 				</div>
 			</div>
 		</div>
-		<script src="js/imgScroll.js"></script>
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/imgSlide1_2.js"></script>
 	</body>
 </html>
